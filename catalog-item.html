@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Набор для путешествий</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="inner-page">
+    <header class="main-header">
+        <a class="main-header-logo">
+            <img src="img/logo.svg" href="index.html" width="111" height="24" alt="Логотип барбершопа">
+        </a>
+        <nav class="main-navigation">
+            <ul class="site-navigation">
+                <li>
+                    <a href="#">ГЛАВНАЯ</a>
+                </li>
+                <li>
+                    <a href="#">ИНФОРМАЦИЯ</a>
+                </li>
+                <li>
+                    <a href="#">НОВОСТИ</a>
+                </li>
+                <li>
+                    <a href="#">ПРАЙСЛИСТ</a>
+                </li>
+                <li class="site-navigation-current">
+                    <a href="#">МАГАЗИН</a>
+                </li>
+                <li>
+                    <a href="#">КОНТАКТЫ</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="user-navigation">
+            <li class="login-link">ВХОД</li>
+        </ul>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Набор для путешествий BAXTER OF CALIFORNIA</h1>
+        <ul class="breadcrumbs">
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="catalog.html">Магазин</a>
+            </li>
+            <li class="breadcrumbs-current">
+                <a href="catalog.html">Средства для ухода</a>
+            </li>
+            <li class="breadcrumbs-current">
+                Набор для путешествий BAXTER OF CALIFORNIA
+            </li>
+        </ul>
+
+        <section class="images">
+            <img src="img/grand-image.jpg" alt="Главное изображение продукта" class="images-main">
+            <ul class="images-list">
+                <li class="images-item">
+                    <img src="img/traveler_preview.jpg" alt="Дополнительное изображение продукта 1">
+                </li>
+                <li class="images-item">
+                    <img src="img/traveler_preview1.jpg" alt="Дополнительное изображение продукта 2">
+                </li>
+                <li class="images-item">
+                    <img src="img/traveler_preview2.jpg" alt="Дополнительное изображение продукта 3">
+                </li>
+            </ul>
+        </section>
+
+        <section class="product-description">
+            <span class="in-stock-status">В наличии</span>
+            <span class="articul">Артикул: DEXTER-AE</span>
+            <p class="product-description description">
+                TRAVEL KIT – НЕОБХОДИМЫЙ АКСЕССУАР ВО ВРЕМЯ ЛЮБОГО ПУТЕШЕСТВИЯ. В АККУРАТНОЙ КОЖАНОЙ СУМКЕ НАХОДИТСЯ ВСЕ, ЧТО НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ ИЛИ ОТДЫХА: СРЕДСТВО ДЛЯ УМЫВАНИЯ, УВЛАЖНЯЮЩИЙ КРЕМ, КРЕМ ДЛЯ БРИТЬЯ, КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ. НАБОР ТАКЖЕ МОЖЕТ СТАТЬ ОТЛИЧНЫМ ПОДАРКОМ.
+            </p>
+            <p class="price">
+                <b>1000 RUR</b>
+                <a class="button">Купить</a>
+            </p>
+            <h3>В набоор входят</h3>
+            <ul class="product-set">
+                <li>Cras id ultricies. (50 мл)</li>
+                <li>Fusce ac purus. (150 мл)</li>
+                <li>Aliquam in egestas. (100 мл)</li>
+                <li>Duis rutrum metus. (50 мл)</li>
+                <li>Proin sit amet.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        <p>БАРБЕРШОП "БОРОДИНСКИЙ"
+            <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д 19/8
+            <br> ТЕЛЕФОН: +7 (495)666-02-66
+        </p>
+        <div class="footer-social">
+            <b>ДАВАЙТЕ ДРУЖИТЬ</b>
+            <ul>
+                <li>
+                    <a class="social-button" href="#">VK</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">FB</a>
+                </li>
+                <li>
+                    <a class="social-button" href="#">INSTA</a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="footer-copyright">
+            <b>РАЗРАБОТАНО:</b>
+            <a href="#" class="button">ВАСЯ</a>
+        </p>
+    </footer>
+
+    <section class="modal modal-login">
+            <h2>Личный кабинет</h2>
+            <p>Введите свой логин и пароль</p>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                <p>
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input id="user-login" type="text" name="login" value="" placeholder="Логин">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input id="user-password" type="password" name="password" value="" placeholder="Пароль">
+                </p>
+                <p class="login-password-info">
+                    <label class="login-checkbox">
+                        <input class="visually-hidden" type="checkbox" name="remember">
+                        <span class="checkbox-indicator"></span>
+                        Запомните меня
+                    </label>
+                </p>
+                <button class="button" type="submit">Войти</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </section>
+
+</body>
+
+</html>
