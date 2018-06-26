@@ -1,5 +1,5 @@
 .main-content {
     display: flex;
     padding-top: 30px;
-
+    flex-wrap: wrap;
 }
