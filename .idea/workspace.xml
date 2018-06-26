@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79026e56-7ea6-4deb-bb65-dd09f97438e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/blocks/breadcrumbs/breadcrumbs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/catalog-item/catalog-item.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/catalog/catalog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/container/container.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/filter/filter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/footer/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/header/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/main-content/main-content.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/blocks/pagination/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -52,36 +40,36 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="3346" />
-          <entry key="html" value="1054" />
+          <entry key="html" value="1059" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="3346" />
-          <entry key="HTML" value="1054" />
+          <entry key="HTML" value="1059" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="298" selection-start-line="298" selection-end-line="327" />
+            <state relative-caret-position="864">
+              <caret line="174" selection-start-line="174" selection-end-line="174" />
               <folding>
-                <marker date="1530021942095" expanded="true" signature="14875:15840" ph="..." />
+                <marker date="1530023405692" expanded="true" signature="14761:15726" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
+            <state relative-caret-position="-236">
+              <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -201,11 +189,11 @@
         <option value="$PROJECT_DIR$/css/blocks/main-content/main-content.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/blocks/filter/filter.css" />
-        <option value="$PROJECT_DIR$/catalog.html" />
         <option value="$PROJECT_DIR$/css/blocks/pagination/pagination.css" />
         <option value="$PROJECT_DIR$/css/blocks/footer/footer.css" />
         <option value="$PROJECT_DIR$/css/blocks/catalog-item/catalog-item.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/catalog.html" />
       </list>
     </option>
   </component>
@@ -329,12 +317,12 @@
       <workItem from="1529443505968" duration="20134000" />
       <workItem from="1529726211721" duration="4988000" />
       <workItem from="1529832150056" duration="13409000" />
-      <workItem from="1530004410051" duration="10687000" />
+      <workItem from="1530004410051" duration="11068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49704000" />
+    <option name="totallyTimeSpent" value="50085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
@@ -465,20 +453,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="298" selection-start-line="298" selection-end-line="327" />
-          <folding>
-            <marker date="1530021942095" expanded="true" signature="14875:15840" ph="..." />
-          </folding>
+        <state relative-caret-position="-236">
+          <caret line="44" column="59" selection-start-line="44" selection-start-column="59" selection-end-line="44" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/catalog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="199" lean-forward="true" selection-start-line="199" selection-end-line="199" />
+        <state relative-caret-position="864">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+          <folding>
+            <marker date="1530023405692" expanded="true" signature="14761:15726" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
