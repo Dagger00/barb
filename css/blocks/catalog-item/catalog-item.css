@@ -45,6 +45,13 @@
 .catalog-item__buy a {
     color: #ffffff;
 }
+.catalog-item__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .catalog-item__buy a:hover {
     background-color: #593210;
 }

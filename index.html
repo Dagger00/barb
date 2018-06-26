@@ -55,29 +55,29 @@
     </div>
 </header>
 
-<main class="container">
-    <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+<div class="container">
+    <h1 class="container__page-title">Барбершоп Бородинский</h1>
 
     <section class="features">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="features-list">
-            <li class="features-item">
-                <h3>Быстро</h3>
-                <p>
+        <h2 class="features__title features__title_visually-hidden">Преимущества</h2>
+        <ul class="features__list">
+            <li class="feature">
+                <h3 class="feature__title">Быстро</h3>
+                <p class="feature__description">
                     Мы делаем свою работу быстро! Два часа пролетят незаметноо и вы - счастливый обладатель стрижки
                     минутки!
                 </p>
             </li>
-            <li class="features-item">
-                <h3>Круто</h3>
-                <p>
+            <li class="feature">
+                <h3 class="feature__title">Круто</h3>
+                <p class="feature__description">
                     Мы делаем свою работу быстро! Два часа пролетят незаметноо и вы - счастливый обладатель стрижки
                     минутки!
                 </p>
             </li>
-            <li class="features-item">
-                <h3>Дорого</h3>
-                <p>
+            <li class="feature">
+                <h3 class="feature__title">Дорого</h3>
+                <p class="feature__description">
                     Мы делаем свою работу быстро! Два часа пролетят незаметноо и вы - счастливый обладатель стрижки
                     минутки!
                 </p>
@@ -85,88 +85,88 @@
         </ul>
     </section>
 
-    <div class="block">
+    <div class="main-content">
         <section class="news">
-            <h2>НОВОСТИ</h2>
-            <ul class="news-list">
-                <li class="news-item">
-                    <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-                    <time class="datetime" datetime="2018-09-25">25 сентября</time>
+            <h2 class="news__title">НОВОСТИ</h2>
+            <ul class="news__list">
+                <li class="news__item">
+                    <p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                    <time class="news__datetime" datetime="2018-09-25">25 сентября</time>
                 </li>
-                <li class="news-item">
-                    <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
+                <li class="news__item">
+                    <p class="news__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
                         ПОПОЛНИЛ
                         НАШИ СТРОЙНЫЕ РЯДЫ</p>
-                    <time class="datetime" datetime="2018-09-19">19 сентября</time>
+                    <time class="news__datetime" datetime="2018-09-19">19 сентября</time>
                 </li>
             </ul>
-            <a class="button" href="news.html">Все новости</a>
+            <a class="news__button" href="news.html">Все новости</a>
         </section>
 
         <section class="gallery">
-            <h2>ФОТОГАЛЕРЕЯ</h2>
-            <figure class="gallery-content">
-                <a href="#">
-                    <img class="gallery-content-image" src="img/studio.jpg" height="164" alt="Интерьер">
+            <h2 class="gallery__title">ФОТОГАЛЕРЕЯ</h2>
+            <figure class="gallery__content">
+                <a class="gallery__link" href="#">
+                    <img class="gallery__image" src="img/studio.jpg" height="164" alt="Интерьер">
                 </a>
             </figure>
-            <div class="gallery-buttons">
-                <button class="button gallery-button gallery-button-back" type="button">Назад</button>
-                <button class="button gallery-button gallery-button-next" type="button">Вперёд</button>
+            <div class="gallery__buttons">
+                <button class="gallery__button gallery__button_back" type="button">Назад</button>
+                <button class="gallery__button gallery__button_next" type="button">Вперёд</button>
             </div>
         </section>
     </div>
 
-    <div class="block">
+    <div class="main-content">
         <section class="contacts">
-            <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-            <p>БАРБЕРШОП "БОРОДИНСКИЙ"
+            <h2 class="contacts__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+            <p class="contacts__address">БАРБЕРШОП "БОРОДИНСКИЙ"
                 <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д 19/8
                 <br> ТЕЛЕФОН: +7 (495)666-02-66
             </p>
 
-            <p>ВРЕМЯ РАБОТЫ:
+            <p class="contacts__info">ВРЕМЯ РАБОТЫ:
                 <br> ПН-ПТ:С 10:00 ДО 22:00
                 <br> СБ-ВС:С 10:00 ДО 19:00
             </p>
-            <div class="contacts-buttons">
-                <a class="button" href="map.html">Как проехать</a>
-                <a class="button" href="contacts.html">Обратная связь</a>
+            <div class="contacts__buttons">
+                <a class="contacts__button" href="map.html">Как проехать</a>
+                <a class="contacts__button" href="contacts.html">Обратная связь</a>
             </div>
         </section>
 
         <section class="appointment">
-            <h2>Записаться</h2>
-            <p class="appointment-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
-                <div class="appointment-form-inputs">
-                    <div class="row-1">
-                        <p>
-                            <label class="visually-hidden" for="appointment-date">Дата</label>
-                            <input id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+            <h2 class="appointment__title">Записаться</h2>
+            <p class="appointment__info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+            <form class="appointment__form" action="https://echo.htmlacademy.ru" method="POST">
+                <div class="appointment__form-inputs">
+                    <div class="appointment__row-1">
+                        <p class="appointment__field-container">
+                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__date">Дата</label>
+                            <input id="appointment__date" class="appointment__date" type="text" name="date" value="" placeholder="08.10.2017">
                         </p>
-                        <p>
-                            <label class="visually-hidden" for="appointment-time">Время</label>
-                            <input id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                        <p class="appointment__field-container">
+                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__time">Время</label>
+                            <input id="appointment__time" class="appointment__time" type="text" name="time" value="" placeholder="10:00">
                         </p>
                     </div>
-                    <div class="row-2">
-                        <p>
-                            <label class="visually-hidden" for="appointment-name">Ваше имя</label>
-                            <input id="appointment-name" type="text" name="name" value="" placeholder="Имя">
+                    <div class="appointment__row-2">
+                        <p class="appointment__field-container">
+                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__name">Ваше имя</label>
+                            <input id="appointment__name" class="appointment__name" type="text" name="name" value="" placeholder="Имя">
                         </p>
-                        <p>
-                            <label class="visually-hidden" for="appointment-phone">Телефон</label>
-                            <input id="appointment-phone" type="tel" name="phoone" value=""
+                        <p class="appointment__field-container">
+                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__phone">Телефон</label>
+                            <input id="appointment__phone" class="appointment__phone" type="tel" name="phone" value=""
                                    placeholder="+7 123 456 78 99">
                         </p>
                     </div>
                 </div>
-                <button class="button" type="submit">Отправить</button>
+                <button class="appointment__button" type="submit">Отправить</button>
             </form>
         </section>
     </div>
-</main>
+</div>
 
 <footer class="footer">
     <h2 class="footer__title footer__title_visually-hidden">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
