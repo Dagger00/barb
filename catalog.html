@@ -9,336 +9,347 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blocks/header/header.css">
+    <link rel="stylesheet" href="css/blocks/container/container.css">
+    <link rel="stylesheet" href="css/blocks/breadcrumbs/breadcrumbs.css">
+    <link rel="stylesheet" href="css/blocks/main-content/main-content.css">
+    <link rel="stylesheet" href="css/blocks/catalog/catalog.css">
+    <link rel="stylesheet" href="css/blocks/pagination/pagination.css">
+    <link rel="stylesheet" href="css/blocks/footer/footer.css">
+    <link rel="stylesheet" href="css/blocks/filter/filter.css">
+    <link rel="stylesheet" href="css/blocks/catalog-item/catalog-item.css">
 </head>
 
 <body class="inner-page">
-    <header class="main-header">
-        <a class="main-header-logo">
-            <img src="img/logo.svg" href="index.html" width="111" height="24" alt="Логотип барбершопа">
+
+<header class="header">
+    <div class="header__max-size">
+        <a class="mini-logo">
+            <img class="mini-logo__image" src="img/inner-logo.png" href="index.html" width="111" height="24"
+                 alt="Логотип барбершопа">
         </a>
         <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li>
-                    <a href="#">ГЛАВНАЯ</a>
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="index.html">ГЛАВНАЯ</a>
                 </li>
-                <li>
-                    <a href="#">ИНФОРМАЦИЯ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">ИНФОРМАЦИЯ</a>
                 </li>
-                <li>
-                    <a href="#">НОВОСТИ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">НОВОСТИ</a>
                 </li>
-                <li>
-                    <a href="#">ПРАЙСЛИСТ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">ПРАЙСЛИСТ</a>
                 </li>
-                <li class="site-navigation-current">
-                    <a href="#">МАГАЗИН</a>
+                <li class="main-navigation__item main-navigation__item_active">
+                    <a class="main-navigation__link" href="#">МАГАЗИН</a>
                 </li>
-                <li>
-                    <a href="#">КОНТАКТЫ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">КОНТАКТЫ</a>
                 </li>
             </ul>
         </nav>
         <ul class="user-navigation">
-            <li class="login-link">ВХОД</li>
+            <li class="user-navigation__item"><a class="user-navigation__link" href="#">ВХОД</a></li>
         </ul>
-    </header>
+    </div>
+</header>
 
-    <main class="container">
-        <h1 class="page-title">Средства для ухода</h1>
-        <ul class="breadcrumbs">
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="catalog.html">Магазин</a>
-            </li>
-            <li class="breadcrumbs-current">Средства для ухода</li>
-        </ul>
+<div class="container">
+    <h1 class="container__page-title">Средства для ухода</h1>
 
-        <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <div>
-                <form class="filter" action="get" action="https://echo.htmlacademy.ru">
-                    <div>
-                        <h3>Производители</h3>
+    <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
 
-                        <ul class="prooducers-list">
-                            <li class="filter-option">
-                                <label>
-                                    Baxter of California
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Baxter of California" checked>
-                                </label>
-                            </li>
-                            <li class="filter-option">
-                                <label>
-                                    MR NATTY
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MR NATTY" checked>
-                                </label>
-                            </li>
-                            <li class="filter-option">
-                                <label>
-                                    SUAVECITO
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="SUAVECITO">
-                                </label>
-                            </li>
-                            <li class="filter-option">
-                                <label>
-                                    MALIN+GOETZ
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MALIN+GOETZ" checked>
-                                </label>
-                            </li>
-                            <li class="filter-option">
-                                <label>
-                                    MURRAY'S
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="MURRAY'S">
-                                </label>
-                            </li>
-                            <li class="filter-option">
-                                <label>
-                                    AMERICAN CREW
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="AMERICAN CREW" checked>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3>Группы товаров</h2>
-                            <ul>
-                                <li class="filter-option">
-                                    <label>
-                                        Бритвенные принадлежности
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving">
-                                    </label>
-                                </li>
-                                <li class="filter-option">
-                                    <label>
-                                        Средства для ухода
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care">
-                                    </label>
-                                </li>
-                                <li class="filter-option">
-                                    <label>
-                                        Аксессуары
-                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accessories" checked>
-                                    </label>
-                                </li>
-                            </ul>
-                    </div>
-                    <button class="filter-button button" type="submit">
-                        Показать
-                    </button>
-                </form>
-            </div>
+        <li class="breadcrumbs__item breadcrumbs__item_separator">
 
+        </li>
+
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="catalog.html">Магазин</a>
+        </li>
+
+        <li class="breadcrumbs__item breadcrumbs__item_separator">
+
+        </li>
+
+        <li class="breadcrumbs__item breadcrumbs__item_active">
+            Средства для ухода
+        </li>
+    </ul>
+
+    <div class="main-content">
+        <section class="filter">
+            <h2 class="filter__title filter__title_visually-hidden">Фильтр товаров</h2>
+            <form class="filter__form" action="get" action="https://echo.htmlacademy.ru">
+                <div class="filter-block">
+                    <h3 class="filter-block__title">Производители</h3>
+                    <ul class="filter-block__list">
+                        <li class="filter-block__item">
+                            <input id="checkbox1" class="filter-block__input filter-block__input_checkbox"
+                                   type="checkbox"
+                                   name="Baxter of California" checked>
+                            <label for="checkbox1" class="filter-block__label">
+                                Baxter of California
+                            </label>
+                        </li>
+                        <li class="filter-block__item">
+                            <input id="checkbox2" class="filter-block__input filter-block__input_checkbox"
+                                   type="checkbox"
+                                   name="MR NATTY" checked>
+
+                            <label for="checkbox2" class="filter-block__label">
+                                MR NATTY
+                            </label>
+                        </li>
+                        <li class="filter-block__item">
+                            <input id="checkbox3" class="filter-block__input filter-block__input_checkbox"
+                                   type="checkbox"
+                                   name="SUAVECITO">
+
+                            <label for="checkbox3" class="filter-block__label">
+                                SUAVECITO
+                            </label>
+                        </li>
+                        <li class="filter-block__item">
+                            <input id="checkbox4" class="filter-block__input filter-block__input_checkbox"
+                                   type="checkbox"
+                                   name="MALIN+GOETZ" checked>
+
+                            <label for="checkbox4" class="filter-block__label">
+                                MALIN+GOETZ
+                            </label>
+                        </li>
+                        <li class="filter-block__item">
+                            <input id="checkbox5" class="filter-block__input filter-block__input_checkbox"
+                                   type="checkbox"
+                                   name="MURRAY'S">
+
+                            <label for="checkbox5" class="filter-block__label">
+                                MURRAY'S
+                            </label>
+                        </li>
+                        <li class="filter-block__item">
+                            <input id="checkbox6" class="filter-block__input filter-block__input_checkbox"
+                                   type="checkbox"
+                                   name="AMERICAN CREW" checked>
+
+                            <label for="checkbox6" class="filter-block__label">
+                                AMERICAN CREW
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-block">
+                    <h3 class="filter-block__title">Группы товаров</h3>
+                    <ul class="filter-block__list">
+                        <li class="filter-block__item">
+                            <input id="radio1" class="filter-block__input filter-block__input_radio" type="radio"
+                                   name="product-group" value="shaving">
+
+                            <label for="radio1" class="filter-block__label">
+                                Бритвенные принадлежности
+                            </label>
+                        </li>
+                        <li class="filter-block__item">
+                            <input id="radio2" class="filter-block__input filter-block__input_radio" type="radio"
+                                   name="product-group" value="hair-care">
+
+                            <label for="radio2" class="filter-block__label">
+                                Средства для ухода
+                            </label>
+                        </li>
+                        <li class="filter-block__item">
+                            <input id="radio3" class="filter-block__input filter-block__input_radio" type="radio"
+                                   name="product-group" value="accessories" checked>
+
+                            <label for="radio3" class="filter-block__label">
+                                Аксессуары
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="filter-button button" type="submit">
+                    Показать
+                </button>
+            </form>
         </section>
 
         <section class="catalog">
-            <h2 class="visually-hidden">Список средств для ухода</h2>
-            <ul class="catalog-list">
+            <h2 class="catalog__title">Список средств для ухода</h2>
+            <ul class="catalog__list">
                 <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
+                    <a class="catalog-item__link" href="catalog-item.html">
+                        <h3 class="catalog-item__title">
+                            <span>НАБОР ДЛЯ ПУТЕШЕСТВИЙ</span>
+                            <span>«BAXTER OF CALIFORNIA» </span>
                         </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-1.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-2.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-3.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-4.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-5.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-6.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-3.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-4.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <h3>
-                            <span>Название продукта</span>
-                            <span>AMERICAN CREW </span>
-                        </h3>
-                        <p class="catalog-item-image">
-                            <img src="img/product-6.jpg" width="220" height="165" alt="Название продукта &#171 AMERICAN CREW &#187">
-                        </p>
-                    </a>
-                    <p>
-                        <b>1000 RUR</b>
-                        <a class="button">Купить</a>
-                    </p>
-                </li>
 
+                        <img class="catalog-item__image" src="img/product-1.jpg" width="220" height="165"
+                             alt="НАБОР ДЛЯ ПУТЕШЕСТВИЙ &#171 AMERICAN CREW &#187">
+
+                    </a>
+                    <p class="catalog-item__buy">
+                        <b class="catalog-item__price">1000 RUR</b>
+                        <a class="catalog-item__button">Купить</a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a class="catalog-item__link" href="catalog-item.html">
+                        <h3 class="catalog-item__title">
+                            <span>УВЛАЖНЯЮЩИЙ КОНДИЦ..</span>
+                            <span>«AMERICAN CREW» </span>
+                        </h3>
+
+                        <img class="catalog-item__image" src="img/product-2.jpg" width="220" height="165"
+                             alt="УВЛАЖНЯЮЩИЙ КОНДИЦ.. &#171 AMERICAN CREW &#187">
+
+                    </a>
+                    <p class="catalog-item__buy">
+                        <b class="catalog-item__price">1000 RUR</b>
+                        <a class="catalog-item__button">Купить</a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a class="catalog-item__link" href="catalog-item.html">
+                        <h3 class="catalog-item__title">
+                            <span>ГЕЛЬ ДЛЯ ВОЛОС</span>
+                            <span>«BAXTER OF CALIFORNIA» </span>
+                        </h3>
+
+                        <img class="catalog-item__image" src="img/product-3.jpg" width="220" height="165"
+                             alt="ГЕЛЬ ДЛЯ ВОЛОС  &#171 AMERICAN CREW &#187">
+
+                    </a>
+                    <p class="catalog-item__buy">
+                        <b class="catalog-item__price">1000 RUR</b>
+                        <a class="catalog-item__button">Купить</a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a class="catalog-item__link" href="catalog-item.html">
+                        <h3 class="catalog-item__title">
+                            <span>ГЕЛЬ ДЛЯ ВОЛОС</span>
+                            <span>«AMERICAN CREW» </span>
+                        </h3>
+
+                        <img class="catalog-item__image" src="img/product-4.jpg" width="220" height="165"
+                             alt="ГЕЛЬ ДЛЯ ВОЛОС &#171 AMERICAN CREW &#187">
+
+                    </a>
+                    <p class="catalog-item__buy">
+                        <b class="catalog-item__price">1000 RUR</b>
+                        <a class="catalog-item__button">Купить</a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a class="catalog-item__link" href="catalog-item.html">
+                        <h3 class="catalog-item__title">
+                            <span>ГЕЛЬ ДЛЯ ВОЛОС</span>
+                            <span>«AMERICAN CREW» </span>
+                        </h3>
+
+                        <img class="catalog-item__image" src="img/product-5.jpg" width="220" height="165"
+                             alt="ГЕЛЬ ДЛЯ ВОЛОС &#171 AMERICAN CREW &#187">
+
+                    </a>
+                    <p class="catalog-item__buy">
+                        <b class="catalog-item__price">1000 RUR</b>
+                        <a class="catalog-item__button">Купить</a>
+                    </p>
+                </li>
+                <li class="catalog-item">
+                    <a class="catalog-item__link" href="catalog-item.html">
+                        <h3 class="catalog-item__title">
+                            <span>ГЕЛЬ ДЛЯ ВОЛОС</span>
+                            <span>«SUAVECITO» </span>
+                        </h3>
+
+                        <img class="catalog-item__image" src="img/product-6.jpg" width="220" height="165"
+                             alt="ГЕЛЬ ДЛЯ ВОЛОС &#171 AMERICAN CREW &#187">
+
+                    </a>
+                    <p class="catalog-item__buy">
+                        <b class="catalog-item__price">1000 RUR</b>
+                        <a class="catalog-item__button">Купить</a>
+                    </p>
+                </li>
             </ul>
-            <ul class="pagination-list">
-                <li class="pagination-item">
-                    <a href="#">1</a>
+            <ul class="pagination">
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">1</a>
                 </li>
-                <li class="pagination-item pagination-item-current">
-                    <a>2</a>
+                <li class="pagination__item pagination__item_active">
+                    <a class="pagination__link">2</a>
                 </li>
-                <li class="pagination-item">
-                    <a href="#">3</a>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">3</a>
                 </li>
-                <li class="pagination-item">
-                    <a href="#">4</a>
+                <li class="pagination__item">
+                    <a class="pagination__link" href="#">4</a>
                 </li>
             </ul>
         </section>
-    </main>
+    </div>
+</div>
 
-    <footer class="main-footer">
-        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-        <p>БАРБЕРШОП "БОРОДИНСКИЙ"
+<footer class="footer">
+    <h2 class="footer__title footer__title_visually-hidden">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+    <div class="footer__max-size">
+        <p class="footer__contacts">БАРБЕРШОП "БОРОДИНСКИЙ"
             <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д 19/8
             <br> ТЕЛЕФОН: +7 (495)666-02-66
         </p>
-        <div class="footer-social">
-            <b>ДАВАЙТЕ ДРУЖИТЬ</b>
-            <ul>
-                <li>
-                    <a class="social-button" href="#">VK</a>
+
+        <div class="social-info">
+            <b class="social-info__title">ДАВАЙТЕ ДРУЖИТЬ</b>
+            <ul class="social-buttons">
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_vk" href="#" aria-label="Вконтакте"></a>
                 </li>
-                <li>
-                    <a class="social-button" href="#">FB</a>
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_fb" href="#" aria-label="facebook"></a>
                 </li>
-                <li>
-                    <a class="social-button" href="#">INSTA</a>
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_inst" href="#" aria-label="instagram"></a>
                 </li>
             </ul>
         </div>
 
-        <p class="footer-copyright">
-            <b>РАЗРАБОТАНО:</b>
-            <a href="#" class="button">ВАСЯ</a>
+        <p class="copyright">
+            <b class="copyright__text">РАЗРАБОТАНО:</b>
+            <a href="https://vk.com/me005" target="_blank" class="copyright__button">ВАСЯ</a>
         </p>
-    </footer>
+    </div>
+</footer>
 
-    <section class="modal modal-login">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p>
-                <label class="visually-hidden" for="user-login">Логин</label>
-                <input id="user-login" type="text" name="login" value="" placeholder="Логин">
-            </p>
-            <p>
-                <label class="visually-hidden" for="user-password">Пароль</label>
-                <input id="user-password" type="password" name="password" value="" placeholder="Пароль">
-            </p>
-            <p class="login-password-info">
-                <label class="login-checkbox">
-                    <input class="visually-hidden" type="checkbox" name="remember">
-                    <span class="checkbox-indicator"></span>
-                    Запомните меня
-                </label>
-            </p>
-            <button class="button" type="submit">Войти</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-    </section>
+<!--<section class="modal modal-login">-->
+<!--<h2>Личный кабинет</h2>-->
+<!--<p>Введите свой логин и пароль</p>-->
+<!--<form class="login-form" action="https://echo.htmlacademy.ru" method="POST">-->
+<!--<p>-->
+<!--<label class="visually-hidden" for="user-login">Логин</label>-->
+<!--<input id="user-login" type="text" name="login" value="" placeholder="Логин">-->
+<!--</p>-->
+<!--<p>-->
+<!--<label class="visually-hidden" for="user-password">Пароль</label>-->
+<!--<input id="user-password" type="password" name="password" value="" placeholder="Пароль">-->
+<!--</p>-->
+<!--<p class="login-password-info">-->
+<!--<label class="login-checkbox">-->
+<!--<input class="visually-hidden" type="checkbox" name="remember">-->
+<!--<span class="checkbox-indicator"></span>-->
+<!--Запомните меня-->
+<!--</label>-->
+<!--</p>-->
+<!--<button class="button" type="submit">Войти</button>-->
+<!--</form>-->
+<!--<button class="modal-close" type="button">Закрыть</button>-->
+<!--</section>-->
+
 </body>
 
 </html>

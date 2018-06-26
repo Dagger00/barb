@@ -1,0 +1,17 @@
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.breadcrumbs__item.breadcrumbs__item_separator {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.breadcrumbs__item.breadcrumbs__item_active {
+    color: #909090;
+}

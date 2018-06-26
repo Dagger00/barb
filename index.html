@@ -9,44 +9,50 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blocks/header/header.css">
+    <link rel="stylesheet" href="css/blocks/container/container.css">
+    <link rel="stylesheet" href="css/blocks/breadcrumbs/breadcrumbs.css">
+    <link rel="stylesheet" href="css/blocks/main-content/main-content.css">
+    <link rel="stylesheet" href="css/blocks/catalog/catalog.css">
+    <link rel="stylesheet" href="css/blocks/pagination/pagination.css">
+    <link rel="stylesheet" href="css/blocks/footer/footer.css">
+    <link rel="stylesheet" href="css/blocks/filter/filter.css">
+    <link rel="stylesheet" href="css/blocks/catalog-item/catalog-item.css">
 </head>
 
 <body>
-<header class="main-header">
-    <div class="navigation">
-        <div class="navigation-inner">
-            <nav class="main-navigation">
-                <ul class="site-navigation">
-                    <li class="site-navigation-1">
-                        <a href="#">ГЛАВНАЯ</a>
-                    </li>
-                    <li class="site-navigation-2">
-                        <a href="#">ИНФОРМАЦИЯ</a>
-                    </li>
-                    <li class="site-navigation-3">
-                        <a href="#">НОВОСТИ</a>
-                    </li>
-                    <li class="site-navigation-4">
-                        <a href="#">ПРАЙСЛИСТ</a>
-                    </li>
-                    <li class="site-navigation-5">
-                        <a href="/catalog.html">МАГАЗИН</a>
-                    </li>
-                    <li class="site-navigation-6">
-                        <a href="#">КОНТАКТЫ</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="user-navigation">
-                <li class="login-link">
-                    <a class="login-link" href="login.html">ВХОД</a>
+<header class="header">
+    <div class="header__max-size">
+        <a class="mini-logo">
+            <img class="mini-logo__image" src="img/inner-logo.png" href="index.html" width="111" height="24"
+                 alt="Логотип барбершопа">
+        </a>
+        <nav class="main-navigation">
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item main-navigation__item_active">
+                    <a class="main-navigation__link" href="#">ГЛАВНАЯ</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">ИНФОРМАЦИЯ</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">НОВОСТИ</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">ПРАЙСЛИСТ</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="catalog.html">МАГАЗИН</a>
+                </li>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">КОНТАКТЫ</a>
                 </li>
             </ul>
-        </div>
+        </nav>
+        <ul class="user-navigation">
+            <li class="user-navigation__item"><a class="user-navigation__link" href="#">ВХОД</a></li>
+        </ul>
     </div>
-    <a class="main-header-logo">
-        <img src="img/index-logo.png" width="368" height="204" alt="Логотип барбершопа">
-    </a>
 </header>
 
 <main class="container">
@@ -162,29 +168,32 @@
     </div>
 </main>
 
-<footer class="main-footer">
-    <div class="footer-inner">
-        <div class="contacts">
-            <h2 class="visually-hidden">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-            <p>БАРБЕРШОП "БОРОДИНСКИЙ"
-                <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д 19/8
-                <br> ТЕЛЕФОН: +7 (495)666-02-66
-            </p>
-            <a href="map.html">Как проехать?</a>
+<footer class="footer">
+    <h2 class="footer__title footer__title_visually-hidden">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+    <div class="footer__max-size">
+        <p class="footer__contacts">БАРБЕРШОП "БОРОДИНСКИЙ"
+            <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д 19/8
+            <br> ТЕЛЕФОН: +7 (495)666-02-66
+        </p>
+
+        <div class="social-info">
+            <b class="social-info__title">ДАВАЙТЕ ДРУЖИТЬ</b>
+            <ul class="social-buttons">
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_vk" href="#" aria-label="Вконтакте"></a>
+                </li>
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_fb" href="#" aria-label="facebook"></a>
+                </li>
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_inst" href="#" aria-label="instagram"></a>
+                </li>
+            </ul>
         </div>
 
-        <div class="footer-social">
-            <b>ДАВАЙТЕ ДРУЖИТЬ</b>
-            <div class="social-list">
-                <a class="social-button" href="#" aria-label="Вконтакте"></a>
-                <a class="social-button" href="#" aria-label="facebook"></a>
-                <a class="social-button" href="#" aria-label="instagram"></a>
-            </div>
-        </div>
-
-        <p class="footer-copyright">
-            <b>РАЗРАБОТАНО:</b>
-            <a href="#" class="button">ВАСЯ</a>
+        <p class="copyright">
+            <b class="copyright__text">РАЗРАБОТАНО:</b>
+            <a href="https://vk.com/me005" target="_blank" class="copyright__button">ВАСЯ</a>
         </p>
     </div>
 </footer>

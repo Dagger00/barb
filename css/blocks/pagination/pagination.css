@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 41px;
+    background-color: #000000;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.pagination__item:hover {
+    background-color: #593210;
+}
+.pagination__item.pagination__item_active {
+    box-sizing: border-box;
+    border: 1px black solid;
+    background-color: #ffffff;
+}
+.pagination__item.pagination__item_active a.pagination__link {
+    color: #000000;
+}
+
+a.pagination__link {
+    color: #ffffff;
+}

@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.container__page-title {
+
+}
