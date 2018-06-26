@@ -41,3 +41,7 @@
 .filter-block__label {
     margin-left: 10px;
 }
+.filter__pagination {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

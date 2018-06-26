@@ -1,3 +1,7 @@
+.catalog {
+    max-width: 760px;
+
+}
 .catalog__list {
     display: flex;
     flex-wrap: wrap;
