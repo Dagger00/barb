@@ -1,50 +1,53 @@
 .filter {
-    min-width: 173px;
+  min-width: 173px;
 }
 
 .filter h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 21px;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
 }
 
 .filter__title.filter__title_visually-hidden {
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    position: absolute;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .filter-block__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .filter-block__item {
-    line-height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .filter-block__input {
-    transform:scale(1.5);
-    opacity:0.9;
-    cursor: pointer;
+  transform: scale(1.5);
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .filter-block__label {
-    margin-left: 10px;
+  margin-left: 10px;
 }
+
 .filter__pagination {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    align-self: flex-start;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-self: flex-start;
 }
+
 .filter-block__label {
-    width: 119px;
+  width: 119px;
+  line-height: 1.3em;
 }
