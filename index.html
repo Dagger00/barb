@@ -56,30 +56,33 @@
 </header>
 
 <div class="container">
-    <h1 class="container__page-title">Барбершоп Бородинский</h1>
+    <img class="container__page-title" src="img/index-logo.svg" alt="Логотип Барбершоп Бородинский">
 
     <section class="features">
         <h2 class="features__title features__title_visually-hidden">Преимущества</h2>
         <ul class="features__list">
             <li class="feature">
                 <h3 class="feature__title">Быстро</h3>
+                <div class="feature__square"></div>
                 <p class="feature__description">
-                    Мы делаем свою работу быстро! Два часа пролетят незаметноо и вы - счастливый обладатель стрижки
-                    минутки!
+                    МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ
+                    СТРИЖКИ-МИНУТКИ!
                 </p>
             </li>
             <li class="feature">
                 <h3 class="feature__title">Круто</h3>
+                <div class="feature__square"></div>
                 <p class="feature__description">
-                    Мы делаем свою работу быстро! Два часа пролетят незаметноо и вы - счастливый обладатель стрижки
-                    минутки!
+                    ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ
+                    ВНЕШНЕ.
                 </p>
             </li>
             <li class="feature">
                 <h3 class="feature__title">Дорого</h3>
+                <div class="feature__square"></div>
                 <p class="feature__description">
-                    Мы делаем свою работу быстро! Два часа пролетят незаметноо и вы - счастливый обладатель стрижки
-                    минутки!
+                    НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ
+                    ОПРЕДЕЛЕНЫЙ СТАТУС?
                 </p>
             </li>
         </ul>
@@ -90,29 +93,38 @@
             <h2 class="news__title">НОВОСТИ</h2>
             <ul class="news__list">
                 <li class="news__item">
-                    <p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
+                    <p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО
+                        ВРЕМЯ СТРИЖКИ</p>
                     <time class="news__datetime" datetime="2018-09-25">25 сентября</time>
                 </li>
                 <li class="news__item">
-                    <p class="news__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД
+                    <p class="news__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС "БРИТВА" СТРИГУНЕЦ, ОБЛАДАТЕЛЬ МНОЖЕСТВА
+                        ТИТУЛОВ И НАГРАД
                         ПОПОЛНИЛ
                         НАШИ СТРОЙНЫЕ РЯДЫ</p>
                     <time class="news__datetime" datetime="2018-09-19">19 сентября</time>
                 </li>
             </ul>
-            <a class="news__button" href="news.html">Все новости</a>
+            <button class="button news__button">
+                <a class="news__link" href="news.html">Все новости</a>
+            </button>
         </section>
-
+        <svg class="main-content__separator"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="8px" height="278px">
+            <image  x="0px" y="0px" width="8px" height="278px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAEWCAQAAADxrR5fAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCxkPKQH1hNFtAAACYklEQVRYw91YSXLjMAxs0LL//97IIuZAiQQaEKmZ3ManBOoNi5yqiKJ/BAps0n9vj4p5Lr5wfkp/jgUCESHt5wmCChIpggLxFIOQjAK8oqh40Y0RGyOCi0MIBO+phqB4F0DwHgg5NYJosYgSXd7s8rkK0kXLQBTIQFyiH7b9xGCFXYpHfDzCtR9cSFTybgUbi7qJFQjeeE1EAXAOwcaUl3fBsJWOcBR4CmK3QIkahQ93JtpmZjTaJRNFmq0YUbIt0dYMuR/3oLhgI4sbUAgWXOBX6VwuU8oBXkN/TYWTUjABMoRY0SdJqdthKxOKeFsZ5dIVOkKdD60hp8BhMkoSTKhmTPOkaw3JNIKLO0urESgCufnmlzsKlqJYFM7orrUrx+08JM5D+GA0peCOElbpXPp2F83Jstt8HvYPvzyjeNtVMPDEQrdrl7/u9v8q6HOK+oL+i8ag6BShrTA8ZOmiv+hWez89mN5REg2dIhTaLlkfUJyt3rso6tOpD5W63G1dzvQcUCKq5xjzIdtzqRwsuNR0HviNhgumQ1SNR04RZzyngF2SRfXoSbC0ECjViupA2DuuN6KaIRRAjVfohqzWVh82V6PLLFhDHLwGolTroiOYRkQ4yyvYMVxgNQbliLaHtz2YQs0pvnamTnRoHH5AXy8aXBTfkaN9yEWxW0qFYudud6Z87bKDRlKo+PG3rjHHj99+tYUgipOiE5dqEZprJMF2Ft0BRoRg6le5e9GKL2t8oy14yCRapxrtgsB3St8OB7s40TY1sK2i/Z8A11sJfivnBX1AgY9+h9i8ArDpjcZ94Q95QV5DXqKN2wAAAABJRU5ErkJggg==" />
+        </svg>
         <section class="gallery">
             <h2 class="gallery__title">ФОТОГАЛЕРЕЯ</h2>
             <figure class="gallery__content">
                 <a class="gallery__link" href="#">
-                    <img class="gallery__image" src="img/studio.jpg" height="164" alt="Интерьер">
+                    <img class="gallery__image" src="img/studio.jpg" alt="Интерьер">
                 </a>
             </figure>
             <div class="gallery__buttons">
-                <button class="gallery__button gallery__button_back" type="button">Назад</button>
-                <button class="gallery__button gallery__button_next" type="button">Вперёд</button>
+                <button class="button gallery__button_back" type="button">Назад</button>
+                <button class="button gallery__button_next" type="button">Вперёд</button>
             </div>
         </section>
     </div>
@@ -124,45 +136,56 @@
                 <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д 19/8
                 <br> ТЕЛЕФОН: +7 (495)666-02-66
             </p>
-
             <p class="contacts__info">ВРЕМЯ РАБОТЫ:
                 <br> ПН-ПТ:С 10:00 ДО 22:00
                 <br> СБ-ВС:С 10:00 ДО 19:00
             </p>
             <div class="contacts__buttons">
-                <a class="contacts__button" href="map.html">Как проехать</a>
-                <a class="contacts__button" href="contacts.html">Обратная связь</a>
+                <button class="button contacts__button contacts__button-how">Как проехать</button>
+                <button class="button contacts__button contacts__button-feedback">Обратная связь</button>
             </div>
         </section>
-
+        <svg class="main-content__separator"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="8px" height="278px">
+            <image  x="0px" y="0px" width="8px" height="278px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAEWCAQAAADxrR5fAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCxkPKQH1hNFtAAACYklEQVRYw91YSXLjMAxs0LL//97IIuZAiQQaEKmZ3ManBOoNi5yqiKJ/BAps0n9vj4p5Lr5wfkp/jgUCESHt5wmCChIpggLxFIOQjAK8oqh40Y0RGyOCi0MIBO+phqB4F0DwHgg5NYJosYgSXd7s8rkK0kXLQBTIQFyiH7b9xGCFXYpHfDzCtR9cSFTybgUbi7qJFQjeeE1EAXAOwcaUl3fBsJWOcBR4CmK3QIkahQ93JtpmZjTaJRNFmq0YUbIt0dYMuR/3oLhgI4sbUAgWXOBX6VwuU8oBXkN/TYWTUjABMoRY0SdJqdthKxOKeFsZ5dIVOkKdD60hp8BhMkoSTKhmTPOkaw3JNIKLO0urESgCufnmlzsKlqJYFM7orrUrx+08JM5D+GA0peCOElbpXPp2F83Jstt8HvYPvzyjeNtVMPDEQrdrl7/u9v8q6HOK+oL+i8ag6BShrTA8ZOmiv+hWez89mN5REg2dIhTaLlkfUJyt3rso6tOpD5W63G1dzvQcUCKq5xjzIdtzqRwsuNR0HviNhgumQ1SNR04RZzyngF2SRfXoSbC0ECjViupA2DuuN6KaIRRAjVfohqzWVh82V6PLLFhDHLwGolTroiOYRkQ4yyvYMVxgNQbliLaHtz2YQs0pvnamTnRoHH5AXy8aXBTfkaN9yEWxW0qFYudud6Z87bKDRlKo+PG3rjHHj99+tYUgipOiE5dqEZprJMF2Ft0BRoRg6le5e9GKL2t8oy14yCRapxrtgsB3St8OB7s40TY1sK2i/Z8A11sJfivnBX1AgY9+h9i8ArDpjcZ94Q95QV5DXqKN2wAAAABJRU5ErkJggg==" />
+        </svg>
         <section class="appointment">
             <h2 class="appointment__title">Записаться</h2>
             <p class="appointment__info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
             <form class="appointment__form" action="https://echo.htmlacademy.ru" method="POST">
                 <div class="appointment__form-inputs">
-                    <div class="appointment__row-1">
+                    <div class="appointment__row appointment__row-1">
                         <p class="appointment__field-container">
-                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__date">Дата</label>
-                            <input id="appointment__date" class="appointment__date" type="text" name="date" value="" placeholder="08.10.2017">
+                            <label class="appointment__label" for="appointment__date">Дата</label>
+                            <input id="appointment__date" class="appointment__input appointment__input-date" name="date"
+                                   value=""
+                                   placeholder="08.10.2017">
                         </p>
                         <p class="appointment__field-container">
-                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__time">Время</label>
-                            <input id="appointment__time" class="appointment__time" type="text" name="time" value="" placeholder="10:00">
+                            <label class="appointment__label" for="appointment__time">Время</label>
+                            <input id="appointment__time" class="appointment__input appointment__input-time" name="time"
+                                   value=""
+                                   placeholder="10:00">
                         </p>
                     </div>
-                    <div class="appointment__row-2">
+                    <div class="appointment__row appointment__row-2">
                         <p class="appointment__field-container">
-                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__name">Ваше имя</label>
-                            <input id="appointment__name" class="appointment__name" type="text" name="name" value="" placeholder="Имя">
+                            <label class="appointment__label" for="appointment__name">Ваше имя</label>
+                            <input id="appointment__name" class="appointment__input appointment__input-name" name="name"
+                                   value=""
+                                   placeholder="Имя">
                         </p>
                         <p class="appointment__field-container">
-                            <label class="appointment__label appointment__label_visually-hidden" for="appointment__phone">Телефон</label>
-                            <input id="appointment__phone" class="appointment__phone" type="tel" name="phone" value=""
+                            <label class="appointment__label" for="appointment__phone">Телефон</label>
+                            <input id="appointment__phone" class="appointment__input appointment__input-phone"
+                                   type="tel" name="phone" value=""
                                    placeholder="+7 123 456 78 99">
                         </p>
                     </div>
                 </div>
-                <button class="appointment__button" type="submit">Отправить</button>
+                <button class="button appointment__button">Отправить</button>
             </form>
         </section>
     </div>
