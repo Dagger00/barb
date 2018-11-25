@@ -7,7 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Каталог косметики</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="postcss/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blocks/header/header.css">
+    <link rel="stylesheet" href="css/blocks/container/container.css">
+    <link rel="stylesheet" href="css/blocks/breadcrumbs/breadcrumbs.css">
+    <link rel="stylesheet" href="css/blocks/main-content/main-content.css">
+    <link rel="stylesheet" href="css/blocks/catalog/catalog.css">
+    <link rel="stylesheet" href="css/blocks/pagination/pagination.css">
+    <link rel="stylesheet" href="css/blocks/footer/footer.css">
+    <link rel="stylesheet" href="css/blocks/filter/filter.css">
+    <link rel="stylesheet" href="css/blocks/catalog-item/catalog-item.css">
 
 </head>
 
@@ -47,7 +57,7 @@
     </div>
 </header>
 
-<div class="container">
+<div class="shop-container">
     <h1 class="container__page-title">Средства для ухода</h1>
 
     <ul class="breadcrumbs">
@@ -72,7 +82,7 @@
         </li>
     </ul>
 
-    <div class="main-content">
+    <div class="shop-content">
         <section class="filter">
             <h2 class="filter__title filter__title_visually-hidden">Фильтр товаров</h2>
             <form class="filter__form" action="get" action="https://echo.htmlacademy.ru">
@@ -167,7 +177,6 @@
         </section>
 
         <section class="catalog">
-            <h2 class="catalog__title">Список средств для ухода</h2>
             <ul class="catalog__list">
                 <li class="catalog-item">
                     <a class="catalog-item__link" href="catalog-item.html">

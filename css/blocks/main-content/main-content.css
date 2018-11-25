@@ -8,6 +8,15 @@
   margin-top: 85px;
   padding: 50px 80px;
 }
+.shop-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #ffffff url('../../../img/mini-bg.jpg') repeat;
+  color: #000000;
+  margin-top: 58px;
+  width: 940px;
+}
 
 .main-content section:last-child {
   margin-left: 31px;
@@ -42,6 +51,7 @@
 
 .news__text {
   margin: 29px 0 0;
+  width: 300px;
 }
 
 .news__button {

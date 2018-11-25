@@ -1,4 +1,4 @@
-.container {
+.index-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,18 +8,27 @@
   margin: 0 auto;
 }
 
-.container__page-title {
+.shop-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 70px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.container__page-image {
   width: 371px;
   height: 155px;
+  margin-top: 60px;
+}
+.container__page-title {
   margin-top: 60px;
 }
 
 .features {
   width: 100%;
-}
-
-.features__title {
-
 }
 
 .features__title.features__title_visually-hidden {

@@ -1,6 +1,5 @@
 .filter {
-    max-width: 220px;
-    width: 100%;
+    min-width: 173px;
 }
 
 .filter h3 {
@@ -44,4 +43,8 @@
 .filter__pagination {
     margin-top: 50px;
     margin-bottom: 50px;
+    align-self: flex-start;
+}
+.filter-block__label {
+    width: 119px;
 }
