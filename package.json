@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "build": "rimraf postcss && postcss css/main.css -d postcss --use postcss-import --use autoprefixer",
+    "build": "rimraf postcss && postcss css -d postcss --use postcss-import --use autoprefixer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
