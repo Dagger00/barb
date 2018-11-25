@@ -9,57 +9,84 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blocks/header/header.css">
+    <link rel="stylesheet" href="css/blocks/container/container.css">
+    <link rel="stylesheet" href="css/blocks/breadcrumbs/breadcrumbs.css">
+    <link rel="stylesheet" href="css/blocks/main-content/main-content.css">
+    <link rel="stylesheet" href="css/blocks/catalog/catalog.css">
+    <link rel="stylesheet" href="css/blocks/pagination/pagination.css">
+    <link rel="stylesheet" href="css/blocks/footer/footer.css">
+    <link rel="stylesheet" href="css/blocks/filter/filter.css">
+    <link rel="stylesheet" href="css/blocks/images/images.css">
+    <link rel="stylesheet" href="css/blocks/product/product.css">
+    <link rel="stylesheet" href="css/blocks/catalog-item/catalog-item.css">
 </head>
 
 <body class="inner-page">
-    <header class="main-header">
-        <a class="main-header-logo">
-            <img src="img/logo.svg" href="index.html" width="111" height="24" alt="Логотип барбершопа">
+<header class="header">
+    <div class="header__max-size">
+        <a class="mini-logo">
+            <img class="mini-logo__image" src="img/inner-logo.png" href="index.html" width="111" height="24"
+                 alt="Логотип барбершопа">
         </a>
         <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li>
-                    <a href="#">ГЛАВНАЯ</a>
+            <ul class="main-navigation__list">
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="index.html">ГЛАВНАЯ</a>
                 </li>
-                <li>
-                    <a href="#">ИНФОРМАЦИЯ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">ИНФОРМАЦИЯ</a>
                 </li>
-                <li>
-                    <a href="#">НОВОСТИ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">НОВОСТИ</a>
                 </li>
-                <li>
-                    <a href="#">ПРАЙСЛИСТ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">ПРАЙСЛИСТ</a>
                 </li>
-                <li class="site-navigation-current">
-                    <a href="#">МАГАЗИН</a>
+                <li class="main-navigation__item main-navigation__item_active">
+                    <a class="main-navigation__link" href="#">МАГАЗИН</a>
                 </li>
-                <li>
-                    <a href="#">КОНТАКТЫ</a>
+                <li class="main-navigation__item">
+                    <a class="main-navigation__link" href="#">КОНТАКТЫ</a>
                 </li>
             </ul>
         </nav>
         <ul class="user-navigation">
-            <li class="login-link">ВХОД</li>
+            <li class="user-navigation__item"><a class="user-navigation__link" href="#">ВХОД</a></li>
         </ul>
-    </header>
+    </div>
+</header>
 
-    <main class="container">
-        <h1 class="page-title">Набор для путешествий BAXTER OF CALIFORNIA</h1>
-        <ul class="breadcrumbs">
-            <li>
-                <a href="index.html">Главная</a>
-            </li>
-            <li>
-                <a href="catalog.html">Магазин</a>
-            </li>
-            <li class="breadcrumbs-current">
-                <a href="catalog.html">Средства для ухода</a>
-            </li>
-            <li class="breadcrumbs-current">
-                Набор для путешествий BAXTER OF CALIFORNIA
-            </li>
-        </ul>
+<div class="shop-item-container">
+    <h1 class="page-title">Набор для путешествий BAXTER OF CALIFORNIA</h1>
+    <ul class="breadcrumbs shop-item-container__breadcrumbs">
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html">Главная</a>
+        </li>
 
+        <li class="breadcrumbs__item breadcrumbs__item_separator"></li>
+
+        <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="catalog.html">Магазин</a>
+        </li>
+
+        <li class="breadcrumbs__item breadcrumbs__item_separator">
+
+        </li>
+
+        <li class="breadcrumbs__item breadcrumbs__item_active">
+            Средства для ухода
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item_separator">
+
+        </li>
+
+        <li class="breadcrumbs__item breadcrumbs__item_active">
+            Набор для путешествий BAXTER OF CALIFORNIA
+        </li>
+    </ul>
+
+    <div class="product">
         <section class="images">
             <img src="img/grand-image.jpg" alt="Главное изображение продукта" class="images-main">
             <ul class="images-list">
@@ -75,77 +102,102 @@
             </ul>
         </section>
 
-        <section class="product-description">
-            <span class="in-stock-status">В наличии</span>
-            <span class="articul">Артикул: DEXTER-AE</span>
-            <p class="product-description description">
-                TRAVEL KIT – НЕОБХОДИМЫЙ АКСЕССУАР ВО ВРЕМЯ ЛЮБОГО ПУТЕШЕСТВИЯ. В АККУРАТНОЙ КОЖАНОЙ СУМКЕ НАХОДИТСЯ ВСЕ, ЧТО НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ ИЛИ ОТДЫХА: СРЕДСТВО ДЛЯ УМЫВАНИЯ, УВЛАЖНЯЮЩИЙ КРЕМ, КРЕМ ДЛЯ БРИТЬЯ, КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ. НАБОР ТАКЖЕ МОЖЕТ СТАТЬ ОТЛИЧНЫМ ПОДАРКОМ.
+        <section class="product-info">
+            <div class="product-info__head">
+                <span class="in-stock-status">Есть в наличии</span>
+                <span class="articul">Артикул: DEXTER-AE</span>
+            </div>
+            <p class="product-info__description">
+                TRAVEL KIT – НЕОБХОДИМЫЙ АКСЕССУАР ВО ВРЕМЯ ЛЮБОГО ПУТЕШЕСТВИЯ. В АККУРАТНОЙ КОЖАНОЙ СУМКЕ НАХОДИТСЯ
+                ВСЕ,
+                ЧТО НУЖНО ДЛЯ БРИТЬЯ И УХОДА ЗА КОЖЕЙ ВО ВРЕМЯ РАБОЧЕЙ ПОЕЗДКИ ИЛИ ОТДЫХА: СРЕДСТВО ДЛЯ УМЫВАНИЯ,
+                УВЛАЖНЯЮЩИЙ КРЕМ, КРЕМ ДЛЯ БРИТЬЯ, КРЕМ ПОСЛЕ БРИТЬЯ, ШАМПУНЬ. НАБОР ТАКЖЕ МОЖЕТ СТАТЬ ОТЛИЧНЫМ
+                ПОДАРКОМ.
             </p>
-            <p class="price">
-                <b>1000 RUR</b>
-                <a class="button">Купить</a>
+            <p class="catalog-item__buy product-info__catalog-item__buy">
+                <b class="catalog-item__price">1000 RUR</b>
+                <a class="catalog-item__button">Купить</a>
             </p>
-            <h3>В набоор входят</h3>
-            <ul class="product-set">
-                <li>Cras id ultricies. (50 мл)</li>
-                <li>Fusce ac purus. (150 мл)</li>
-                <li>Aliquam in egestas. (100 мл)</li>
-                <li>Duis rutrum metus. (50 мл)</li>
-                <li>Proin sit amet.</li>
-            </ul>
+            <h3 class="product-info__pack-title">В набор входят</h3>
+            <div class="product-set">
+                <div class="product-set__block">
+                    <div class="black__square"></div>
+                    <div>Средство для умывания (50 мл)</div>
+                </div>
+                <div class="product-set__block">
+                    <div class="black__square"></div>
+                    <div>Увлажняющий крем (50 мл)</div>
+                </div>
+                <div class="product-set__block">
+                    <div class="black__square"></div>
+                    <div>Крем для бритья (50 мл)</div>
+                </div>
+                <div class="product-set__block">
+                    <div class="black__square"></div>
+                    <div>Крем после бритья, шампунь (50 мл)</div>
+                </div>
+                <div class="product-set__block">
+                    <div class="black__square"></div>
+                    <div>Удобная кожаная косметичка</div>
+                </div>
+            </div>
         </section>
-    </main>
-    
-    <footer class="main-footer">
-        <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-        <p>БАРБЕРШОП "БОРОДИНСКИЙ"
+    </div>
+</div>
+
+<footer class="footer">
+    <h2 class="footer__title footer__title_visually-hidden">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+    <div class="footer__max-size">
+        <p class="footer__contacts">БАРБЕРШОП "БОРОДИНСКИЙ"
             <br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д 19/8
             <br> ТЕЛЕФОН: +7 (495)666-02-66
         </p>
-        <div class="footer-social">
-            <b>ДАВАЙТЕ ДРУЖИТЬ</b>
-            <ul>
-                <li>
-                    <a class="social-button" href="#">VK</a>
+
+        <div class="social-info">
+            <b class="social-info__title">ДАВАЙТЕ ДРУЖИТЬ</b>
+            <ul class="social-buttons">
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_vk" href="#" aria-label="Вконтакте"></a>
                 </li>
-                <li>
-                    <a class="social-button" href="#">FB</a>
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_fb" href="#" aria-label="facebook"></a>
                 </li>
-                <li>
-                    <a class="social-button" href="#">INSTA</a>
+                <li class="social-buttons__item">
+                    <a class="social-buttons__link social-buttons__link_inst" href="#" aria-label="instagram"></a>
                 </li>
             </ul>
         </div>
 
-        <p class="footer-copyright">
-            <b>РАЗРАБОТАНО:</b>
-            <a href="#" class="button">ВАСЯ</a>
+        <p class="copyright">
+            <b class="copyright__text">РАЗРАБОТАНО:</b>
+            <a href="https://vk.com/me005" target="_blank" class="copyright__button">ВАСЯ</a>
         </p>
-    </footer>
+    </div>
+</footer>
 
-    <section class="modal modal-login">
-            <h2>Личный кабинет</h2>
-            <p>Введите свой логин и пароль</p>
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                <p>
-                    <label class="visually-hidden" for="user-login">Логин</label>
-                    <input id="user-login" type="text" name="login" value="" placeholder="Логин">
-                </p>
-                <p>
-                    <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input id="user-password" type="password" name="password" value="" placeholder="Пароль">
-                </p>
-                <p class="login-password-info">
-                    <label class="login-checkbox">
-                        <input class="visually-hidden" type="checkbox" name="remember">
-                        <span class="checkbox-indicator"></span>
-                        Запомните меня
-                    </label>
-                </p>
-                <button class="button" type="submit">Войти</button>
-            </form>
-            <button class="modal-close" type="button">Закрыть</button>
-        </section>
+<section class="modal modal-login visually-hidden">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input id="user-login" type="text" name="login" value="" placeholder="Логин">
+        </p>
+        <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input id="user-password" type="password" name="password" value="" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+            <label class="login-checkbox">
+                <input class="visually-hidden" type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+        </p>
+        <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
 
 </body>
 

@@ -18,6 +18,19 @@
   margin: 0 auto;
 }
 
+.shop-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 70px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.shop-item-container__breadcrumbs {
+  margin-top: 30px;
+}
 .container__page-image {
   width: 371px;
   height: 155px;
@@ -60,6 +73,13 @@
   background-color: #ffffff;
   transform: rotateZ(45deg);
   margin-top: 22px;
+}
+
+.black__square {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  transform: rotateZ(45deg);
 }
 
 .feature__description {

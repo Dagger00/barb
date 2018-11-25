@@ -1,0 +1,59 @@
+.product {
+  display: flex;
+  margin-top: 59px;
+}
+
+.page-title {
+  margin-top: 60px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 85px;
+  width: 390px;
+}
+
+.product-info__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.in-stock-status {
+  width: 119px;
+}
+
+.articul {
+  opacity: 0.5;
+  width: 119px;
+}
+.product-info__pack-title {
+  margin-top: 60px;
+}
+.product-info__description {
+  margin-top: 41px;
+}
+
+.product-info__catalog-item__buy {
+  margin-top: 42px;
+}
+
+.product-set {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product-set__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-set__block div:last-child {
+  margin-left: 12px;
+}
